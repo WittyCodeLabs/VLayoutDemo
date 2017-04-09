@@ -49,7 +49,7 @@ public class LinearLayoutActivity extends AppCompatActivity {
         LinearLayoutHelper layoutHelper1 = new LinearLayoutHelper();
         //设置宽高比
         layoutHelper1.setAspectRatio(2.0f);
-        //设置分割线高度
+        //
         layoutHelper1.setDividerHeight(20);
         //设置背景颜色
         layoutHelper1.setBgColor(0xFFF5A623);
@@ -67,7 +67,7 @@ public class LinearLayoutActivity extends AppCompatActivity {
         adapters.add(new CustomAdapter(this, layoutHelper2, 3));
         adapters.add(new CustomAdapter(this, layoutHelper3, 3));
         delegateAdapter.setAdapters(adapters);
-        // TODO: 17/3/14 填坑3 如何是设置单个adapter，可以采用DelegateAdapter的addAdapter方法，
+        // TODO: 17/3/14 填坑3 如果是设置单个adapter，可以采用DelegateAdapter的addAdapter方法，
         // 但是recyclerView.setAdapter方法必须在delegateAdapter.addAdapter方法之后
         //如果采用DelegateAdapter的setAdapters方法，可以设置1个或多个adapter,此时recyclerView.setAdapter方法可以放在delegateAdapter.addAdapter之前
 //        delegateAdapter.addAdapter(new CustomAdapter(this, layoutHelper1, 6));
